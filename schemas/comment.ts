@@ -1,9 +1,11 @@
 import {defineField, defineType} from 'sanity'
+import { CommentIcon} from '@sanity/icons'
 
 export default defineType({
   name: 'comment',
   type: 'document',
   title: 'Comment',
+  icon:CommentIcon,
   options: {
     dateFormat: 'YYYY-MM-DD',
     timeFormat: 'HH:mm',

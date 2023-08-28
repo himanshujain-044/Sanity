@@ -11,6 +11,9 @@ import {unsplashImageAsset} from 'sanity-plugin-asset-source-unsplash'
 import {dashboardTool, projectUsersWidget} from '@sanity/dashboard'
 import {documentListWidget} from 'sanity-plugin-dashboard-widget-document-list'
 import {pageStructure, singletonPlugin} from './plugins/settings'
+import about from './schemas/about'
+import contact from './schemas/contact'
+import page from './schemas/page'
 
 export default defineConfig({
   name: 'default',
@@ -44,7 +47,7 @@ export default defineConfig({
       ],
     }),
     deskTool({
-      structure: pageStructure([settings]),
+      structure: pageStructure([settings,about,contact]),
     }),
     media(),
     visionTool(),

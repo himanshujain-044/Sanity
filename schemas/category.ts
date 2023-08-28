@@ -1,9 +1,10 @@
 import {defineField, defineType} from 'sanity'
-
+import { StackCompactIcon} from '@sanity/icons'
 export default defineType({
   name: 'category',
   title: 'Category',
   type: 'document',
+  icon:StackCompactIcon,
   fields: [
     defineField({
       name: 'title',
